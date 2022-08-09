@@ -4,7 +4,7 @@ import styles from "./header.module.css";
 
 const  Header =() =>{
     return(
-        <h1>Testando a página</h1>
+        <h1>Pokemon</h1>
     )
 }
 export default Header;
