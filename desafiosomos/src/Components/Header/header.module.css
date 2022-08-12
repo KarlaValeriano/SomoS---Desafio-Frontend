@@ -1,5 +1,13 @@
-h1{
-    color:rgba(255, 166, 0, 0.963);
-    text-align:center;
-    border-color: rgb(12, 12, 170);
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
+h1{ 
+    color:rgb(255,203,8);
+    text-align:center;
+    font: normal normal bold 50px/60px Helvetica Neue;
+}
+header{
+    background:rgb(45,97,181);
+    height: 90px; }

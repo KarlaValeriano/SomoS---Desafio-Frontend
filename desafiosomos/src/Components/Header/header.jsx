@@ -2,9 +2,12 @@ import React from "react";
 import styles from "./header.module.css";
 
 
+
 const  Header =() =>{
     return(
-        <h1>Pokemon</h1>
+        <header>
+         <h1>Pokemon</h1>
+        </header>   
     )
 }
-export default Header;
+export default Header
