@@ -24,13 +24,17 @@ function Section() {
   <button type='button' onClick={api}>Busque um Pokemon</button>
 
  <div>
+ <h1 className={styles.nome}>{object.name}</h1>
+ <h3> Id: {object.id}</h3>
+ <h3>{object.stats[0].stat.name}</h3>
+ <h3> Tipo: {object.types[0].type.name}</h3>
+ <h3>hp: {object.stats[0].base_stat}</h3>
  <img src = {object.sprites.front_default} alt =''/>
- <h3>{object.id}</h3>
- <h3>{object.name}</h3>
 
- </div>
 
  
+
+ </div>
 </div>
 
   )
