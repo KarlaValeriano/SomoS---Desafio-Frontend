@@ -1,12 +1,12 @@
 import React from "react"
 import Header from "./Components/Header/Header"
-import Section from "./Components/Section/Section"
+import Lista from "./Components/Lista/Lista"
 
 function App() {
  return (
     <div>
       <Header/>
-      <Section/>
+      <Lista/>
      </div>
   )
 }
