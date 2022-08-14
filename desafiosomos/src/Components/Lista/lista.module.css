@@ -23,6 +23,12 @@
     display: grid;
     grid-gap: 2rem;
 }
+.right h2{ margin: auto;
+    
+}
+.left h2{
+    margin: auto;
+}
 .card{
 
     background-color: rgb(45,97,181);
@@ -35,4 +41,43 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.itens{
+    width: 50%;
+    text-align: center;
+    color: black;
+    position: fixed;
+    top: 100px;
+    right: 10px;
+
+}
+.itens h1{
+    color:rgb(255,203,8);
+    text-shadow: black 2.5px 2.5px ;
+    font: normal normal bold 50px/60px Helvetica Neue;
+     letter-spacing: 1px;
+
+}
+.habilidades{
+    margin-top: 2rem;
+}
+.btn{
+    display: flex;
+}
+.btn button{
+   
+    border-radius: 4px 4px 4px 4px;
+    background-color: rgb(255,203,8);
+    color: rgb(45,97,181);
+    box-shadow: black 2px 2px;
+    text-shadow: black;
+    outline: none;
+    border: none;
+    width: 150px;
+    padding: 0.3rem 0;
+    margin: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+
+      
 }
