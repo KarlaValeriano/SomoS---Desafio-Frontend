@@ -33,7 +33,7 @@
 
     background-color: rgb(45,97,181);
     width: 160px;
-    height: 40px;
+    height: 40px; 
     border-radius: 5px 5px 5px 5px;
     box-shadow: black 2px 2px;
     color:rgb(255,203,8);
@@ -41,6 +41,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap:1rem;
+    margin:2rem;
+    
 }
 .itens{
     width: 50%;
@@ -73,7 +76,7 @@
     text-shadow: black;
     outline: none;
     border: none;
-    width: 150px;
+    width: 120px;
     padding: 0.3rem 0;
     margin: 1rem;
     font-size: 16px;

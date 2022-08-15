@@ -1,42 +1,42 @@
-import React from 'react'
 import styles from './lista.module.css';
+import Card from './card';
+import Poke from './Poke';
+import React, {useState, useEffect} from "react";
 
 const Lista = () => {
-  return (
+  const [pokedex, setPokedex] = useState([]);
+ 
+
+  useEffect(() =>{
+    async function Requisicao(){
+      const Api = await fetch(`https://pokeapi.co/api/v2/pokemon/`);
+      const Json = await Api.json();
+      setPokedex(Json.results);
+      console.log(Json);
+    }
+    Requisicao();
+
+    },[])
+
+ return (
+
     <div className={styles.container}>
-      
+
  <div className={styles.left}>
-   <div className={styles.card}>
-       <h2>Pokemon</h2>
-   </div>
-   
- </div>
+  <Card pokemon={pokedex} />
+
+  <div className={styles.btn}>
+       <button>Anterior</button>
+       <button>Próximo</button>
+</div>
+</div>
 
 <div  className={styles.right}>
-     <div className={styles.card}>
-           <h2>Pokemon</h2>
-     </div>
+  
+<Poke />
+</div>
 </div>
 
-<div className={styles.btn}>
-  <button>Anterior</button>
-  <button>Próximo</button>
-</div>
-
-
-
- <div className={styles.itens}>
- <h1>Pokemon</h1>
- <img/>
- <div className={styles.habilidades}>
-    <h2>1</h2>
-    <h2>1</h2>
-    <h2>1</h2>
-    <h2>1</h2>
-    </div>
-  </div>
-
- </div>
   )
 }
 

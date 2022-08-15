@@ -1,19 +1,20 @@
 import React from 'react'
+import styles from './lista.module.css';
 
 const Poke = () => {
   return (
     <div>
          
- <h1>pokemon</h1>
+<div className={styles.itens}>
+ <h1>Pokemon</h1>
  <img/>
-
- <div className={styles.itens}>
-    <h3>1</h3>
-    <h3>1</h3>
-    <h3>1</h3>
-    <h3>1</h3>
-
- </div>
+ <div className={styles.habilidades}>
+    <h2>pokemon</h2>
+    <h2>pokemon</h2>
+    <h2>pokemon</h2>
+    <h2>pokemon</h2>
+    </div>
+  </div>
  </div>
   )
 }

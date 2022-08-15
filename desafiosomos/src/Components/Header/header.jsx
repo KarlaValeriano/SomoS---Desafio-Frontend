@@ -5,8 +5,8 @@ const  Header =() =>{
     return(
         <header>
             <div>
-            <h1 className={styles.poke}>Pokemon</h1> 
-           
+<img alt="PokéAPI" src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"className={styles.poke}/>
+            
             </div>
         
         </header>   
